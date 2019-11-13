@@ -30,7 +30,7 @@ int aggiungi_contatto(string lista[30][2]){
     cin >> nome;
     cout << "Cognome:";
     cin >> cognome;
-	cout << endl <<"Numero: ";
+    cout << "Numero: ";
     cin >> numero ;
 
         
