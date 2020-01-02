@@ -101,7 +101,7 @@ int main(){
 				comando = 'A';
 				break;
 			default:
-                cout << "Azione non riconosciuta, premere 1 per tornare indietro";
+                cout << "Azione non riconosciuta, premere 1 per tornare indietro ";
                 cin >> comando;
                 comando = 'A';
 				break;
