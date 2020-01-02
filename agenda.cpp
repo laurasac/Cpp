@@ -11,7 +11,7 @@ void mostra_contatti(string lista[30][2]){
 	}else{
         for(int i = 0; i < numero_contatti; i++){
             if (lista[i][0] != ""){
-                cout << i+1 << ":" << lista[i][0] <<" " << lista[i][1] << endl;
+                cout << i+1 << ":" << lista[i][0] <<": " << lista[i][1] << endl;
             }
         }
     }
@@ -24,16 +24,19 @@ void mostra_contatti(string lista[30][2]){
 
 int aggiungi_contatto(string lista[30][2]){
     int i ;
-    string nome, numero;
+    string nome, cognome, numero;
         
     cout << "Nome: ";
     cin >> nome;
-    cout << endl <<"Numero: ";
-    cin >> numero;
+    cout << "Cognome:";
+    cin >> cognome;
+    cout << "Numero: ";
+    cin >> numero ;
+
         
     for( i = 0; i < numero_contatti; i++){
         if (lista[i][0] == ""){
-            lista[i][0] = nome;
+            lista[i][0] = nome+ " "+cognome;
             lista[i][1] = numero;
             break;
         }
